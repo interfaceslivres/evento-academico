@@ -149,6 +149,67 @@ Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
 along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 and Blueprint http://www.blueprintcss.org/
 */
+
+
+/*
+Mudanças nas cores o/
+*/
+
+body {
+	background: #fff !important;
+}
+
+/*
+header .site-header.site-branding {
+	background-color: rgba(250, 250, 250, 0.1);
+}
+*/
+
+article.format-standard.hentry {
+	background: #d6d6b8;
+}
+
+.format-standard header.entry-header a {
+	color: #fff;
+	background: #6b1515;
+}
+
+.format-standard header.entry-header a:hover {
+	color: #adadad;
+}
+
+.format-standard footer.entry-meta .icon.format-icon {
+	background: #6b1515;
+	color: #d6d6b8;
+}
+
+.format-standard footer.entry-meta .meta {
+	background: #6b1515;
+	color: #fff;
+}
+
+.format-standard footer.entry-meta .meta a {
+	color: #fff;
+}
+
+.format-standard footer.entry-meta {
+	background: #d6d6b8;
+}
+
+/*
+Mudanças nas cores no sidebar
+*/
+
+#secondary.side-widget-area.widget-area h1.widget-title {
+	background: #3f4040;
+}
+
+#secondary.side-widget-area.widget-area aside.widget {
+	background: #adadad;
+}
+
+
+
 /* =Global
 ----------------------------------------------- */
 * {
@@ -1253,7 +1314,7 @@ h3 .dashicons-plus-big {
 }
 .hentry .entry-header {
   color: #c7eee6;
-  background: #28c1a3;
+  background: #6b1515;
 }
 .hentry .entry-header a {
   color: #c7eee6;
