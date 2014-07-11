@@ -5,6 +5,40 @@
  * @package Flounder
  */
 
+
+// Create the frontend form
+function my_pre_save_post( $post_id ) {
+	if ( $post_id != 'new' ) {
+		return $post_id;
+		
+    }
+ // Get the Fields
+    $fields = get_field_objects( $post_id );
+    
+    $post = array(
+        'post_status' => 'draft',
+        'post_title' =>  $_POST['fields']['field_53b972ab3c2db'],
+        'post_content' =>  $_POST['fields']['field_53b9d718e980a'],
+        'post_type' => 'post'
+    );  
+    $post_id = wp_insert_post($post); 
+    $_POST['return'] = add_query_arg( array('post_id' => $post_id), $_POST['return'] );    
+     
+    // Redirect para uma nova página.
+     // wp_redirect( add_query_arg( 'updated', 'true', 'http://www.google.com' ) ); 
+     // exit;
+
+    
+    return $post_id;
+}
+add_filter('acf/pre_save_post' , 'my_pre_save_post' );
+
+
+
+
+
+
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
@@ -69,8 +103,8 @@ function flounder_setup() {
 	/**
 	 * Enable support for Post Formats
 	 */
-	add_theme_support( 'post-formats', array( 'aside', 'gallery', 'image', 'video', 'quote', 'link', 'status' )  );
-	
+	add_theme_support( 'post-formats', array( 'aside', 'gallery', 'image', 'audio', 'video', 'quote', 'link', 'status', 'chat' )  );
+
 	/**
 	 * Add an image size that does not exceed content width
 	 */
@@ -104,7 +138,11 @@ add_action( 'widgets_init', 'flounder_widgets_init' );
  * Enqueue scripts and styles
  */
 function flounder_scripts() {
-	wp_enqueue_style( 'icons', get_template_directory_uri().'/assets/fonts/dashicons.css' );
+	if ( version_compare( $GLOBALS['wp_version'], '3.8-alpha', '>' ) ) {
+		wp_enqueue_style( 'dashicons' );
+	} else {
+		wp_enqueue_style( 'icons', get_template_directory_uri().'/assets/fonts/dashicons.css' );
+	}
 	wp_enqueue_style( 'flounder-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'flounder-js', get_template_directory_uri() . '/js/flounder.js', array( 'jquery' ), null, true );

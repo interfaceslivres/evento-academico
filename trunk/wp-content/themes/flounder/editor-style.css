@@ -1,3 +1,15 @@
+/* http://nicolasgallagher.com/pure-css-speech-bubbles/ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
 /* =Reset
 -------------------------------------------------------------- */
 html,
@@ -68,7 +80,7 @@ td {
   vertical-align: baseline;
 }
 html {
-  font-size: 62.5%;
+  font-size: 100%;
   /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
   overflow-y: scroll;
   /* Keeps page centred in all browsers regardless of content height */
@@ -118,11 +130,13 @@ q {
 }
 a:focus {
   outline: thin dotted;
+  text-decoration: underline;
 }
 a:hover,
 a:active {
   /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
   outline: 0;
+  text-decoration: none;
 }
 a img {
   border: 0;
@@ -195,7 +209,7 @@ pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 0.9375rem;
   line-height: 1.6;
   margin-bottom: 1em;
   padding: 1em;
@@ -208,7 +222,7 @@ tt,
 var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
-  font-size: 1.5rem;
+  font-size: 0.9375rem;
 }
 abbr,
 acronym {
@@ -283,7 +297,7 @@ input[type="submit"] {
   -webkit-appearance: button;
   /* Corrects inability to style clickable 'input' types in iOS */
   font-size: 12px;
-  font-size: 1.2rem;
+  font-size: 0.75rem;
   line-height: 1;
   padding: .6em 1em .4em;
 }
@@ -357,6 +371,7 @@ textarea {
   color: #21759b;
   display: block;
   font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
   height: auto;
   left: 5px;
@@ -449,36 +464,36 @@ object {
 }
 /**
  * Colors Mixin. All post-type specific colors are
- * defined here. This is assumed to be called on the 
+ * defined here. This is assumed to be called on the
  * <article> for a post.
  */
 h1 {
-  font-weight: 200;
   font-size: 36px;
-  font-size: 3.6rem;
+  font-size: 2.25rem;
+  font-weight: 200;
   line-height: 1;
 }
 h2 {
   font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 h3 {
-  font-weight: 200;
   font-size: 22px;
-  font-size: 2.2rem;
+  font-size: 1.375rem;
+  font-weight: 200;
   line-height: 1;
 }
 h4 {
-  font-weight: 200;
   font-size: 18px;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
+  font-weight: 200;
   line-height: 1;
 }
 h5 {
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -541,23 +556,23 @@ table td:last-child {
 }
 .wp-caption {
   font-size: 13px;
-  font-size: 1.3rem;
+  font-size: 0.8125rem;
   line-height: 1.3;
 }
 .wp-caption-text {
   padding: 15px;
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   font-style: italic;
 }
 html {
-  font-size: 62.5%;
+  font-size: 100%;
 }
 body {
   color: #2c3e50;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 1rem;
   line-height: 1.5;
   padding: 1em;
 }

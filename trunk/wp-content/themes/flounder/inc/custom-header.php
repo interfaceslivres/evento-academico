@@ -132,9 +132,13 @@ function flounder_admin_header_style() {
 		border-radius: 110px;
 	}
 	.site-title {
+		display: table-cell;
+		height: 220px;
+		width: 220px;
+		vertical-align: middle;
 		font-weight: 200;
 		font-size: 36px;
-		line-height: 220px;
+		line-height: 1.2;
 	}
 	.site-title a {
 		text-decoration: none;
@@ -167,7 +171,7 @@ function flounder_admin_header_image() { ?>
 
 	<div id="headimg" <?php if ( ! empty( $header_image ) ) echo 'class="custom-header"'; ?>>
 		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"<?php echo $style; ?> onclick="return false;" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="site-title displaying-header-text"><a id="name" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"<?php echo $style; ?> onclick="return false;" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div>
 	</div>
 <?php }
