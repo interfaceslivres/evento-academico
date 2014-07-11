@@ -34,14 +34,16 @@
 <div id="page" class="hfeed site">
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-		</div>
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+			<div class="site-branding">
+				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+			</div>
+		</a>
 
 		<nav id="site-navigation" class="navigation-main" role="navigation">
-			<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'flounder' ); ?>"><?php _e( 'Skip to content', 'flounder' ); ?></a></div>
+			<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'flounder' ); ?></a>
 
-			<?php wp_nav_menu( array( 
+			<?php wp_nav_menu( array(
 				'theme_location' => 'primary',
 				/* No fallback, we want the menu to be purposefully set. */
 				'fallback_cb' => '__return_false'
