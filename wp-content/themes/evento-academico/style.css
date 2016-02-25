@@ -1,7 +1,15 @@
-/* FOLHA DE ESTILO DO EVENTO ACADÊMICO */
+/*
+Theme Name: Evento Acadêmico
+Theme URI: https://github.com/interfaceslivres/eventoacademico2015
+Author: Colaboradores do Projeto Interfaces Livres da UFPB
+Author URI: https://github.com/interfaceslivres/
+Description: Em 2015 começamos a planejar esse site e em 2016 o template começa a se integrar ao WP.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-
-/* BOTÃO DO MEIO RESPONSIVO COM SMART GRID */
+This theme, like WordPress, is licensed under the GPL.
+Use o tema livremente. =]
+*/
 
 
 /* ESTILOS BÁSICOS */
@@ -241,6 +249,8 @@ header {
 }
 .ui-page-theme-a div.middle-50 a.link-style-clear {
     font-weight: bold;
+    display: block;
+    padding: 17px 0;
 }
 
 .font-bolder {
@@ -340,13 +350,6 @@ header {
     font-size: 16px;
     text-shadow: none;
     opacity: 0.5;
-}
-
-.divisor-line {
-    height: 75px;
-    background-color: #000;
-    width: 1px;
-    float: left;
 }
 
 
