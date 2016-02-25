@@ -6,33 +6,31 @@
  */
 
 
-// Create the frontend form
-function my_pre_save_post( $post_id ) {
-	if ( $post_id != 'new' ) {
-		return $post_id;
-		
+  
+function my_pre_save_post( $post_id )
+{
+    // check if this is to be a new post
+    if( $post_id != 'new' )
+    {
+        return $post_id;
     }
- // Get the Fields
-    $fields = get_field_objects( $post_id );
-    
+  
+    // Create a new post
     $post = array(
-        'post_status' => 'draft',
-        'post_title' =>  $_POST['fields']['field_53b972ab3c2db'],
-        'post_content' =>  $_POST['fields']['field_53b9d718e980a'],
-        'post_type' => 'post'
-    );  
-    $post_id = wp_insert_post($post); 
-    $_POST['return'] = add_query_arg( array('post_id' => $post_id), $_POST['return'] );    
-     
-    // Redirect para uma nova página.
-     // wp_redirect( add_query_arg( 'updated', 'true', 'http://www.google.com' ) ); 
-     // exit;
-
-    
+        'post_status'  => 'draft' ,
+        'post_title'  => $_POST['fields']['field_56cdb15761efa'],
+        'post_type'  => 'post' ,
+    ); 
+  
+    // insert the post
+    $post_id = wp_insert_post( $post );
+  
+    // return the new ID
     return $post_id;
 }
+  
 add_filter('acf/pre_save_post' , 'my_pre_save_post' );
-
+  
 
 
 
