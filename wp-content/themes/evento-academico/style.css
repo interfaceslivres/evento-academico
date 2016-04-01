@@ -3,7 +3,7 @@ Theme Name: Evento Acadêmico
 Theme URI: https://github.com/interfaceslivres/eventoacademico2015
 Author: Colaboradores do Projeto Interfaces Livres da UFPB
 Author URI: https://github.com/interfaceslivres/
-Description: Em 2015 começamos a planejar esse site e em 2016 o template começa a se integrar ao WP.
+Description: Aqui você coloca a descrição.
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -53,13 +53,13 @@ Use o tema livremente. =]
         height: 54px;
         margin: 3px 5px;
     }
-    .form-size {
+    .form-size, #forms form.searchandfilter div ul li {
         width: 250px;
         height: 80px;
     }
-    .form-size2 {
+    .form-size2, .div-center #post #poststuff {
         width: 300px;
-        height: 60px;
+        min-width: 300px;
     }
     .div-botao-interna {
         height: 75px;
@@ -96,13 +96,13 @@ Use o tema livremente. =]
         height: 54px;
         margin: 3px 5px;
     }
-    .form-size {
+    .form-size, #forms form.searchandfilter div ul li {
         width: 300px;
         height: 80px;
     }
-    .form-size2 {
+    .form-size2, .div-center #post #poststuff {
         width: 300px;
-        height: 60px;
+        min-width: 300px;
     }
     .div-botao-interna {
         height: 75px;
@@ -149,13 +149,13 @@ Use o tema livremente. =]
         height: 54px;
         margin: 3px 5px;
     }
-    .form-size {
+    .form-size, #forms form.searchandfilter div ul li {
         width: 300px;
         height: 80px;
     }
-    .form-size2 {
+    .form-size2, .div-center #post #poststuff {
         width: 300px;
-        height: 60px;
+        min-width: 300px;
     }
     .div-botao-interna {
         height: 75px;
@@ -386,7 +386,7 @@ div h5 {
 }
 
 .footer-padding {
-    padding: 20px 0px 10px 0px;
+    padding: 60px 0px 10px 0px;
 }
 
 .logo-footer {
@@ -492,22 +492,8 @@ img.grayscale {
     background: url(img/dropdown.png) no-repeat right transparent;
 }
 
-div.div-center.form-size>span.Zebra_DatePicker_Icon_Wrapper {
-    display: block !important;
-}
-
-div.div-center.form-size2>span.Zebra_DatePicker_Icon_Wrapper {
-    display: block !important;
-}
-
 .ui-input-text.ui-body-inherit.ui-corner-all.ui-shadow-inset>input {
     color: #969696;
-}
-
-.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Inside.ui-btn.ui-shadow.ui-corner-all {
-    left: 270px !important;
-    top: 12px !important;
-    background: url('img/calendar.png') no-repeat right top !important;
 }
 
 
@@ -748,13 +734,13 @@ div.squaredThree>div.ui-checkbox {
         height: 48px;
         margin: 6px 5px;
     }
-    .form-size {
+    .form-size, #forms form.searchandfilter div ul li  {
         width: 200px;
         height: 80px;
     }
-    .form-size2 {
+    .form-size2, .div-center #post #poststuff {
         width: 200px;
-        height: 60px;
+        min-width: 200px;
     }
     .div-botao-interna {
         height: 75px;

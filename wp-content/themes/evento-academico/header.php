@@ -23,9 +23,9 @@
 
     <link href='http://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/cidades-estados-1.2-utf8.js"></script> <!-- talvez retirar -->
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.mobile-1.4.5.min.js"></script><!--
+    <script src="<?php echo get_template_directory_uri(); ?>/js/cidades-estados-1.2-utf8.js"></script>  talvez retirar 
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/zebra_datepicker.js"></script> <!-- talvez retirar -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri (); ?>/css/jquery.mobile-1.4.5.min.css" type="text/css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/metallic.css" type="text/css">

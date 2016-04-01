@@ -5,7 +5,7 @@
             <header data-role="header">
                 <div id="header-div">
                     <span>
-                        <a data-transition="fade" href="#home"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo do Site" class="evento-logo-image" id="tamanho-logo"></a>
+                        <a data-transition="fade" href="<?php echo site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo do Site" class="evento-logo-image" id="tamanho-logo"></a>
                     </span>
                 </div>
             </header>
