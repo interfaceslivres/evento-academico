@@ -11,6 +11,51 @@ get_header();
 					<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo do Site" class="evento-logo-image" id="tamanho-logo">
 				</span>
                 </div>
+    <script type="text/javascript">
+
+    $(document).bind('mobileinit',function(){
+        $('#acf-field-area_de_conhecimento').attr('data-native-menu', false);
+    });
+        
+
+    (function($){
+        
+       // $(document).live('acf/setup_fields', function(e, postbox){
+            
+            // trigger change on the select field to show selected field
+         //   $('#acf-field-localizacao_do_evento').trigger('change');
+        
+       // });
+                
+        $('#acf-field-pais').live('change', function(){
+            var value = $(this).val();
+            if( value == "Brasil" )
+            {
+                $('#acf-estado').show();
+            }
+            else if (value == 'brasil'){
+                $('#acf-estado').show();
+            }
+            else
+            {
+                $('#acf-estado select').attr('value', null);
+                $('#acf-estado').hide();
+            }            
+        });    
+
+        $('#acf-inicio_do_evento').live('change', function(){
+            var input = $("#acf-inicio_do_evento input").val();
+            var month = input.substring(4,6); 
+            var year = input.substring(0,4);
+            $('#acf-field-mes').attr('value', (41 + (month*1)));
+            $('#acf-field-ano').attr('value', ((year*1) - 1962));
+        });
+
+        
+
+    
+    })(jQuery);
+    </script>
             </header>
 
             <main style="overflow: hidden;">
@@ -207,7 +252,8 @@ get_header();
                 <div id="forms" class="div-center form-size2">
 
 
-                 <?php echo do_shortcode( '[searchandfilter taxonomies="search,category,post_tag,post_format"]' ); ?>
+                 <?php echo do_shortcode( '[searchandfilter headings="Nome do Evento,Área de Conhecimento,País,Estados,Mês,Ano" taxonomies="search,category,search,estados,meses,ano"  submit_label="Filtrar" search_placeholder=" " post_types="post"]' ); ?>
+
 
                     
 <!--

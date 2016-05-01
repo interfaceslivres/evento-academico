@@ -41,7 +41,7 @@
                 </div>
 
                 <div>
-                    <h1 class="font-quicksand resultado-title">Bit.Week</h1>
+                    <h1 class="font-quicksand resultado-title">Bit.Week - resultados da busca</h1>
                     <p class="font-montserrat resultado-body">Local: <span>Departamento de Mídias Digitais (DEMID) - UFPB</span></p>
                     <p class="font-montserrat resultado-body">Data: <span>19 de outubro a 24 de outubro de 2015</span></p>
                     <p class="font-montserrat resultado-body">Descrição: <span>O Bit.Week é um evento sobre o potencial das novas mídias e suas aplicações no mercado de trabalho. Assim como as tendências e possibilidades nessa área, nós também estamos em constante mudança, e cada novo fato pode alterar todo o futuro. Só que em vez de DeLorean, a gente usa muita conversa, pesquisa, estudo e diversão. ;)</span></p>
