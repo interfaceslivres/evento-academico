@@ -59,16 +59,25 @@ get_header();
             </header>
 
             <main style="overflow: hidden;">
-
-                <div id="quemsomos">
-
-
+            
+                <div class="quemsomos">
                     <?php while ( have_posts() ) : the_post() ?>
+                    <div class="conteudo">
+                        <div class="titulos">
+                            <div id="data">
+                                <em><?php the_time('d,m');?></em>
+                            </div>
 
-                        <h1 class="font-montserrat font-bold font-slogan"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-                    
-
+                            <h1 class="font-montserrat font-bold font-slogan quemsomos"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+                                <?php the_title(); ?></a>
+                            </h1><br>
+                        </div>
+                            <div class="description">
+                              <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><em><?php the_content();?></em></a></p>
+                            </div>
+                    </div>
                     <?php endwhile; ?> 
+                
 
 
                         <!--
@@ -78,6 +87,7 @@ get_header();
                         <?php // get_sidebar(); ?>   é uma opção -->
 
                 </div>
+                
 
                 <div class="row">
                     <div class="ui-block-a">

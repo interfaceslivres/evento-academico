@@ -133,7 +133,7 @@ Use o tema livremente. =]
         margin: 0 20% !important;
     }
     #quemsomos {
-        height: 230px !important;
+        height: 400px !important;
     }
     #newsletter {
         height: 230px !important;
@@ -196,14 +196,63 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
-
-#quemsomos h1 {
-    text-align: center;
+/* alterações aqui */
+.conteudo{
     font-size: 30px;
     text-shadow: none;
+    color: white;
+    background: #033243;
+    border-bottom: 1px dotted black;
+    z-index: -1;
 }
 
-#quemsomos h3 {
+/*.titulos{
+    width: 50%;
+} */
+
+.titulos h1{
+    float: left;
+    padding: 30px;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin: 0;
+    border: none;
+    max-width: 400px;
+}
+.titulos h1 a{
+    color:white;
+    text-decoration: none;
+    font-family: Roboto, serif;
+}
+
+.titulos h1 a:visited{
+    color: #A1C4E0;
+}
+
+.titulos a:hover{
+    text-decoration: underline;
+}
+
+.description p{
+    padding-left: 40px;
+    text-transform: capitalize;
+
+}
+.description{
+    clear: both;
+}
+
+#data{
+    float: right;
+    color: black;
+    padding-top: 40px;
+    padding-right: 30px;
+    text-align: right;
+    font-size: 20px;
+    font-family: Roboto, serif;
+}
+
+.quemsomos h3 {
     text-align: center;
     font-size: 16px;
     text-shadow: none;
