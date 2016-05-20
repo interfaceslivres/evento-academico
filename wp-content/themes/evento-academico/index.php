@@ -59,36 +59,6 @@ get_header();
             </header>
 
             <main style="overflow: hidden;">
-            
-                <div class="quemsomos">
-                    <?php while ( have_posts() ) : the_post() ?>
-                    <div class="conteudo">
-                        <div class="titulos">
-                            <div id="data">
-                                <em><?php the_time('d,m');?></em>
-                            </div>
-
-                            <h1 class="font-montserrat font-bold font-slogan quemsomos"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-                                <?php the_title(); ?></a>
-                            </h1><br>
-                        </div>
-                            <div class="description">
-                              <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><em><?php the_content();?></em></a></p>
-                            </div>
-                    </div>
-                    <?php endwhile; ?> 
-                
-
-
-                        <!--
-                        <h3 class="font-montserrat font-bold font-slogan-mini">Somos blablabla
-    						<span id="more" class="font-quicksand font-bold">></span>
-    					</h3>
-                        <?php // get_sidebar(); ?>   é uma opção -->
-
-                </div>
-                
-
                 <div class="row">
                     <div class="ui-block-a">
                         <a data-transition="slide" href="#pesquisar" class="link-style-clear">
@@ -119,6 +89,48 @@ get_header();
                     </div>
                 </div>
 
+                <div class="row">
+                    <div class="aba destaques lightbluebg">
+                        <h1>Destaques</h1>
+                    </div>
+                    <div class="aba recentes lightorangebg">
+                        <h1>Recentes</h1>
+                    </div>
+                </div>
+                <!-- parte de eventos -->
+                    <div class="quemsomos">
+                        <?php while ( have_posts() ) : the_post() ?>
+                        <div class="conteudo lightorangebg">
+                            <div class="titulos lightbluebg">
+                                <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+                                    <h1>
+                                        <?php the_title(); ?> 
+                                        <div>
+                                            <em><?php the_time('d/m');?></em>
+                                        </div>
+                                    </h1>
+                                </a>
+                            </div>
+                            <div class="titulos lightorangebg" id="titulos-direita">
+                              <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+                                    <h1>
+                                        <?php the_title(); ?> <div><em><?php the_time('d/m');?></em></div>
+                                    </h1>
+                                </a>
+                            </div>
+
+                                <div class="description">
+                                   <!-- <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><em><?php the_content();?></em></a></p> -->
+                                </div>
+                        </div>
+                        <?php endwhile; ?> 
+                            <!--
+                            <h3 class="font-montserrat font-bold font-slogan-mini">Somos blablabla
+                                <span id="more" class="font-quicksand font-bold">></span>
+                            </h3>
+                            <?php // get_sidebar(); ?>   é uma opção -->
+                    </div>
+                
                 <div>
                     <div id="newsletter" class="newsletter-section">
                         <a data-transition="slide" href="#newsletter-interna" class="link-style-clear"><h1 class="font-montserrat font-bold font-slogan-newsletter">Deseja receber informações<br>em seu e-mail?</h1>

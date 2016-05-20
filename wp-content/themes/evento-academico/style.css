@@ -196,61 +196,101 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
-/* alterações aqui */
-.conteudo{
-    font-size: 30px;
-    text-shadow: none;
-    color: white;
-    background: #033243;
-    border-bottom: 1px dotted black;
-    z-index: -1;
+/* ALTERAÇÕES AQUI */
+
+.lightbluebg{
+    background: #8aadb8;
 }
 
-/*.titulos{
+.lightorangebg{
+    background: #f9b56e;
+}
+
+.quemsomos{
+    background: url('img/city-day.jpg') no-repeat;
+    background-position: 0 106px;
+    background-size: 100% 100%;
+}
+
+.aba{
     width: 50%;
-} */
+    height: 45px;
+    text-shadow: none;
+}
+
+.aba h1{
+    padding-left: 10px;
+    color:white;
+    font-size: 25px;
+    font-weight: normal;
+}
+.destaques{
+    float: left;
+    border-top-right-radius: 10px;
+}
+.recentes{
+    float: right;
+}
+
+.conteudo{
+    font-size: 20px;
+    text-shadow: none;
+    color: black;
+}
+
+#titulos-direita{
+    float: right;
+}
+
+.titulos{
+    width: 50%;
+    float: left;
+}
 
 .titulos h1{
-    float: left;
-    padding: 30px;
-    font-size: 25px;
+    line-height: 1.2;
+    padding-left: 27px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-size: 18px;
     text-transform: capitalize;
     margin: 0;
     border: none;
-    max-width: 400px;
+    max-width: 300px;
 }
-.titulos h1 a{
-    color:white;
+
+.titulos a{
     text-decoration: none;
+}
+
+.titulos a h1{
+    font-weight: normal;
+    color:white;
     font-family: Roboto, serif;
 }
 
-.titulos h1 a:visited{
-    color: #A1C4E0;
-}
-
-.titulos a:hover{
+.titulos a:hover h1{
     text-decoration: underline;
 }
 
-.description p{
-    padding-left: 40px;
-    text-transform: capitalize;
-
-}
 .description{
     clear: both;
 }
-
-#data{
-    float: right;
-    color: black;
-    padding-top: 40px;
-    padding-right: 30px;
+/* data do evento */
+.titulos em{
+    margin-right: -78px;
+    color: white;
+    padding-right: 10px;
     text-align: right;
-    font-size: 20px;
+    font-size: 18px;
     font-family: Roboto, serif;
 }
+
+.titulos h1 div{
+    text-align: right;
+    float: right;
+}/* fim da data dos eventos */
 
 .quemsomos h3 {
     text-align: center;
@@ -392,6 +432,12 @@ header {
     background-size: cover;
     height: 190px;
     clear: both;
+    /*background: #6db3f2;
+background: -moz-linear-gradient(top,  #6db3f2 0%, #3690f0 30%, #1e69de 100%);
+background: -webkit-linear-gradient(top,  #6db3f2 0%,#3690f0 30%,#1e69de 100%);
+background: linear-gradient(to bottom,  #6db3f2 0%,#3690f0 30%,#1e69de 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 );*/
+
 }
 
 #newsletter h1 {
@@ -405,7 +451,7 @@ header {
     text-align: center;
     font-size: 16px;
     text-shadow: none;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 
