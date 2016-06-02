@@ -1,4 +1,4 @@
-    <footer class="footer-padding div-center">
+    <footer class="footer-padding div-center whitebg">
         <p style="text-align:center;">APOIO</p>
         <center>
             <div id="logo-footer-container" class="div-center">

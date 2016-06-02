@@ -146,6 +146,7 @@ Use o tema livremente. =]
         text-align: center;
         text-shadow: none;
         font-size: 26px;
+        padding-left: 75px;
     }
     #tamanho-logo {
         width: 336px;
@@ -199,65 +200,47 @@ header {
 /* ALTERAÇÕES AQUI */
 
 .lightbluebg{
-    background: #8aadb8;
-}
-
-.lightorangebg{
-    background: #f9b56e;
-}
-
-.quemsomos{
-    background: url('img/city-day.jpg') no-repeat;
-    background-position: 0 106px;
-    background-size: 100% 100%;
-}
-
-.aba{
-    width: 50%;
-    height: 45px;
-    text-shadow: none;
-}
-
-.aba h1{
-    padding-left: 10px;
-    color:white;
-    font-size: 25px;
-    font-weight: normal;
-}
-.destaques{
-    float: left;
-    border-top-right-radius: 10px;
-}
-.recentes{
-    float: right;
+    background: #63656F;
 }
 
 .conteudo{
     font-size: 20px;
     text-shadow: none;
-    color: black;
 }
 
-#titulos-direita{
-    float: right;
+#data{
+    float: left;
+    background: url("img/data.png") no-repeat;
+    width: 64px;
+    padding: 5px;
+    padding-top: 30px;
+    padding-bottom: 20px;   
+    margin-top:10px;
+    color:white;
+    font-weight: normal;
+}
+#data:hover{
+    text-decoration: none;
+}
+
+.quemsomos{
+    background: white;
 }
 
 .titulos{
-    width: 50%;
-    float: left;
+    width: 74%;
+    float: right;
+    text-align: left;
 }
 
 .titulos h1{
     line-height: 1.2;
-    padding-left: 27px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding:0;
     padding-top: 20px;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: capitalize;
     margin: 0;
-    border: none;
-    max-width: 300px;
+    margin-top: 7px;    
 }
 
 .titulos a{
@@ -274,23 +257,17 @@ header {
     text-decoration: underline;
 }
 
-.description{
+.clear{
     clear: both;
 }
-/* data do evento */
-.titulos em{
-    margin-right: -78px;
-    color: white;
-    padding-right: 10px;
-    text-align: right;
-    font-size: 18px;
-    font-family: Roboto, serif;
-}
 
-.titulos h1 div{
-    text-align: right;
-    float: right;
-}/* fim da data dos eventos */
+#subtitulo{
+    color: white;
+    font-size: 12px;
+    font-family: Roboto, serif;
+    margin-top: 3px;
+    margin-bottom: 15px;
+}
 
 .quemsomos h3 {
     text-align: center;
@@ -383,6 +360,24 @@ header {
     color: inherit !important;
 }
 
+/* cores teste
+.orangebg {
+    background-color: #FF8B11;
+}
+
+.boldorangebg {
+    background-color: #FF8300;
+}
+
+.bluebg {
+    background-color: #0499CB;
+}
+
+.boldbluebg {
+    background-color: #036889;
+}
+*/
+
 .orangebg {
     background-color: #fbad5b;
 }
@@ -398,6 +393,7 @@ header {
 .boldbluebg {
     background-color: #007ba6;
 }
+
 
 .middle-button-height {
     height: 75px;

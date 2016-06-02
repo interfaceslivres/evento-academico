@@ -89,47 +89,32 @@ get_header();
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="aba destaques lightbluebg">
-                        <h1>Destaques</h1>
-                    </div>
-                    <div class="aba recentes lightorangebg">
-                        <h1>Recentes</h1>
-                    </div>
-                </div>
                 <!-- parte de eventos -->
                     <div class="quemsomos">
                         <?php while ( have_posts() ) : the_post() ?>
-                        <div class="conteudo lightorangebg">
-                            <div class="titulos lightbluebg">
+                        <div class="conteudo lightbluebg">
+                            <div class="titulos">
                                 <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+
+                                <div id="data">
+                                    <?php the_time('d/m');?>
+                                </div>
                                     <h1>
                                         <?php the_title(); ?> 
-                                        <div>
-                                            <em><?php the_time('d/m');?></em>
-                                        </div>
                                     </h1>
+                                    <div id="subtitulo">
+                                        <em>Área de conhecimento</em>
+                                    </div>
                                 </a>
+                                <div class="clear"></div>
                             </div>
-                            <div class="titulos lightorangebg" id="titulos-direita">
-                              <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
-                                    <h1>
-                                        <?php the_title(); ?> <div><em><?php the_time('d/m');?></em></div>
-                                    </h1>
-                                </a>
-                            </div>
-
-                                <div class="description">
-                                   <!-- <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><em><?php the_content();?></em></a></p> -->
-                                </div>
-                        </div>
                         <?php endwhile; ?> 
                             <!--
                             <h3 class="font-montserrat font-bold font-slogan-mini">Somos blablabla
                                 <span id="more" class="font-quicksand font-bold">></span>
                             </h3>
                             <?php // get_sidebar(); ?>   é uma opção -->
-                    </div>
+                        </div>
                 
                 <div>
                     <div id="newsletter" class="newsletter-section">
