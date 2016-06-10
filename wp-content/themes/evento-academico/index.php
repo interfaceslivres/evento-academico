@@ -156,9 +156,13 @@ get_header();
                     <h1 class="font-quicksand resultado-title">Assine nosso Newsletter!</h1>
                     <p class="font-montserrat resultado-body" style="text-align:center;">Não enviamos spam.
                         <br>Selecione suas áreas de interesse e manteremos você atualizado dos eventos próximos!</p>
+                    
+                     <div id="form">
+                            <?php dynamic_sidebar('form') ?>
+                    </div>
 
                     <div style="padding-top: 30px;">
-                        <div>
+                       <div>
                             <form action="#">
                                 <div class="div-center form-size2 input-list style-4">
                                     <input type="email" pattern="[^ @]*@[^ @]*" placeholder="E-mail" />
@@ -173,7 +177,7 @@ get_header();
                         <p>Ciências Biológicas</p>
                     </div>
 
-                </div>
+                </div> 
 
                 <div class="botao-interna-center">
                     <div class="boldbluebg" style="height: 75px; width: 75px; float: left;">

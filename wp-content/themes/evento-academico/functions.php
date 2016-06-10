@@ -185,4 +185,20 @@ function area_de_conhecimento() {
 }
 add_action( 'init', 'area_de_conhecimento', 0 );
 
+
+
+// adicionando widgets
+function ourWidgetsInit() {
+    
+    register_sidebar( array(
+        'name' => 'Form',
+        'id' => 'form',
+        'before_widget' => '<div class="widget-item">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+}
+
+add_action('widgets_init', 'ourWidgetsInit');
 ?>
